@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body{
+
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Satisfy', cursive;
+    background-color: rgb(34, 61, 61);
+
+}
+
+button {
+
+    font-family: 'Satisfy', cursive;
+    outline: none;
+
+
+}
+
+#pomodoro-clock {
+
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: beige;
+    border-radius: 20px;
+
+    
+}
+
+
+
+
+#pomodoro-clock div {
+
+    margin-bottom: 30px;
+
+}
+
+#nav-options {
+
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ width: 80%;
+ padding: 10px;
+ position: fixed;
+ top: 0;
+
+}
+
+#clock-time {
+
+    text-align: center;
+    width: 40%;
+    position: fixed;
+    
+
+}
+
+#display-time {
+
+    font-size: 50px;
+
+}
+
+#time-options {
+
+    
+  
+    width: 50%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.show {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.hide {
+
+    display: none;
+
+}
+
+.time-buttons {
+
+ width: 20%;
+ height: 50px;
+ font-size: 20px;
+ border-radius: 5px;
+ border: none;
+ cursor: pointer;
+ color: white;
+ transition: 0.60s;
+ 
+
+}
+
+.time-buttons:hover {
+
+opacity: 70%;
+
+}
+
+
+
+#start {
+
+    background-color: rgb(12, 161, 12);
+
+}
+
+#stop {
+
+background-color: rgb(219, 16, 16);
+
+}
+
+#reset {
+
+    background-color:rgb(121, 117, 117);
+    color: black;
+
+}
+.nav-buttons {
+
+    background-color: rgb(7, 9, 160);
+    color: white;
+    border: none;
+    font-size: 25px;
+    border:1px solid wheat;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.60s;
+
+}
+
+.nav-buttons:hover {
+
+    opacity: 70%;
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+
+    <link rel="stylesheet" href="kalkulator.css">
+  <script src="kalkulator.js" defer></script> 
+  <!-- <script src="kalkulatorFrontEndMaster.js" defer></script> -->
+</head>
+
+<body>
+
+
+    <div id="calculator">
+
+        <div class="show-little-result-div">
+            <p id="show-result-little"></p>
+        </div>
+        <div id="delete-display">
+            <div id="delete-button" class="pad-button" data-type="delete">C</div>
+            <div>
+                <p id="show-result">0</p>
+            </div>
+        </div>
+
+        <div id="pad-numbers">
+
+            <div class=" calc-button-number  pad-button" data-type="number">7</div>
+            <div class=" calc-button-number pad-button" data-type="number">8</div>
+            <div class=" calc-button-number pad-button" data-type="number">9</div>
+            <div class="calc-button-math pad-button" id="plus" data-type="operator">+</div>
+            <div class=" calc-button-number pad-button" data-type="number">4</div>
+            <div class=" calc-button-number pad-button" data-type="number">5</div>
+            <div class="calc-button-number pad-button" data-type="number">6</div>
+            <div class=" calc-button-math pad-button" id="minus" data-type="operator">-</div>
+            <div class=" calc-button-number pad-button" data-type="number">1</div>
+            <div class=" calc-button-number pad-button" data-type="number">2</div>
+            <div class=" calc-button-number pad-button" data-type="number">3</div>
+            <div class=" calc-button-math pad-button" id="multy" data-type="operator">*</div>
+            <div class=" calc-button-number pad-button" data-type="number">0</div>
+            <div class="calc-button-number pad-button" id="dot" data-type="number">.</div>
+            <div id="equal" class="pad-button" data-type="equal"="">=</div>
+            <div class=" calc-button-math pad-button" id="div" data-type="operator">/</div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

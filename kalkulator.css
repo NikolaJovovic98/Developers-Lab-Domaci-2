@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+body {
+
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Goldman', cursive;
+    color: whitesmoke;
+ 
+}
+
+#calculator {
+
+ 
+    background-color: rgb(3, 3, 71);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 70%;
+    padding: 3%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+   
+    box-shadow: 20px 20px 19px -1px rgba(80,78,92,1);
+}
+
+#pad-numbers {
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1em;
+    width: 100%;
+    height: 80%;
+
+
+}
+
+
+
+
+#pad-numbers div {
+
+    background-color: rgb(13, 93, 99);
+    border-radius: 8px;
+    font-size: 27px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.60s;
+
+    
+
+}
+
+#pad-numbers div:hover {
+
+    opacity: 65%;
+  
+  }
+
+#delete-display {
+
+font-size: 27px;
+display: grid;
+grid-template-columns: 1fr 4fr;
+margin-bottom: 3%;
+
+
+}
+
+#show-result {
+
+
+float: right;
+font-size: 30px;
+
+}
+
+#delete-button {
+
+    background-color: rgb(212, 85, 26);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.60s;
+
+}
+
+#delete-button:hover {
+
+
+    background-color: rgb(150, 51, 5);
+
+}
+
+[data-state="selected"] {
+
+ background-color: rgb(172, 39, 39) !important;
+
+}
+
+.show-little-result-div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow:hidden;
+    height: 50px;
+  }
+
+#show-result-little {
+
+    font-size: 18px;
+    opacity: 50%;
+
+}
